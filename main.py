@@ -1,33 +1,43 @@
-print("ACESSO REQUERIDO")
-print("NÉCESSÁRIO A INSERÇÃO DA SENHA DE ACESSO")
+operacao = ( input ("Selecione a operação matemática desejada: "))
 
-senha = int(input("Insira a senha do usuário: "))
+if (operacao == "soma"):
+	valor = int(input("Insira o primeiro valor: "))
+	valor2 =  int(input("Insira o segundo valor: "))
+	soma = valor + valor2
+	print("O resultado da soma é:", soma)
 
-if (senha == "12345"):
-    print("ACESSO CONCEDIDO")
+
+elif (operacao == "subtração"):
+	valor3 = int(input("Insira o primeiro valor: "))
+	valor4 =  int(input("Insira o segundo valor: "))
+	subtração = valor3 - valor4
+	print("O resultado da soma é:", subtração)
+
+
+elif (operacao == "multiplicação"):
+	valor5 = int(input("Insira o primeiro valor: "))
+	valor6 =  int(input("Insira o segundo valor: "))
+	multiplicação = valor5 * valor6
+	print("O resultado da multiplicação é:", multiplicação)
+
+
+elif (operacao == "divisão"):
+	valor7 = int(input("Insira o primeiro valor: "))
+	valor8 =  int(input("Insira o segundo valor: "))
+	divisão = valor7 / valor8
+	print("O resultado da divisão é:", divisão)
+
+elif (operacao == "potenciação"):
+	valor9 = int(input("Insira o primeiro valor: "))
+	valor10 =  int(input("Insira o segundo valor: "))
+	potenciação = valor9 ** valor10	
+	print("O resultado da potenciação é:", potenciação)
+
+elif (operacao == "radiciação"):
+	valor11 = int(input("Insira o valor: "))
+	valor12 =  int(input("Insira o índice da raiz: "))
+	radiciação = valor11 ** (1/valor12)
+	print("O resultado da radiciação é:", radiciação)
+
 else:
-    print("ACESSO RECUSADO")
-
-if ("ACESSO CONCEDIDO"):
-    print("INFORME O SEU CPF, POR GENTILEZA")
-    cpf = int(input("Insira o seu CPF: "))
-    print("CPF VÁLIDO")
-
-if ("CPF VÁLIDO"):
-    print("INFORME O SEU NOME, POR GENTILEZA")
-    nome = str(input("Insira o seu nome: "))
-    print("SEJA BEM VINDO(A) AO SISTEMA DE DEPÓSITO E RETIRADA ANÔNIMO (SDRA) ", nome)
-
-if ("SEJA BEM VINDO(A) AO SISTEMA DE DEPÓSITO ANÔNIMO (SDRA) "):
-    print("VOCÊ DESEJA REALIZAR UM DEPÓSITO OU UMA RETIRADA?")
-    escolha = str(input("Digite DEPÓSITO ou RETIRADA: "))
-
-if (escolha == "DEPÓSITO"):
-    print("VOCÊ ESCOLHEU DEPÓSITO")
-    valor_deposito = float(input("Digite o valor que você deseja depositar: R$ "))
-    print("VOCÊ DEPOSITOU O VALOR DE R$ ", valor_deposito, " NO SISTEMA SDRA, O VALOR DEPOSITADO SERÁ ENVIADO EM ALGUNS INSTANTES")
-
-if (escolha == "RETIRADA"):
-    print("VOCÊ ESCOLHEU RETIRADA")
-    valor_retirada = float(input("Digite o valor que você deseja retirar: R$ "))
-    print("VOCÊ RETIROU O VALOR DE R$ ", valor_retirada, " NO SISTEMA SDRA, OBRIGADO POR ESCOLHER UTILIZAR OS NOSSOS SERVIÇOS, VOLTE SEMPRE!")
+	print("Operação inválida. Por favor, selecione uma operação válida: soma, subtração, multiplicação, divisão, potenciação ou radiciação.")
